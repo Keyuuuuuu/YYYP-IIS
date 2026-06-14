@@ -1,31 +1,31 @@
 item,marketHashName,chineseName,weapon,wear,tier
+http://example.org/yyyp/resource/item/980,AK-47 | Aquamarine Revenge (Battle-Scarred),AK-47 | 深海复仇 (战痕累累),AK-47,Battle-Scarred,2
+http://example.org/yyyp/resource/item/2391,AK-47 | Aquamarine Revenge (Factory New),AK-47 | 深海复仇 (崭新出厂),AK-47,Factory New,2
+http://example.org/yyyp/resource/item/204,AK-47 | Aquamarine Revenge (Field-Tested),AK-47 | 深海复仇 (久经沙场),AK-47,Field-Tested,2
+http://example.org/yyyp/resource/item/2025,AK-47 | Aquamarine Revenge (Minimal Wear),AK-47 | 深海复仇 (略有磨损),AK-47,Minimal Wear,2
+http://example.org/yyyp/resource/item/2020,AK-47 | Aquamarine Revenge (Well-Worn),AK-47 | 深海复仇 (破损不堪),AK-47,Well-Worn,2
+http://example.org/yyyp/resource/item/12078,AK-47 | Asiimov (Battle-Scarred),AK-47 | 二西莫夫 (战痕累累),AK-47,Battle-Scarred,2
 http://example.org/yyyp/resource/item/12137,AK-47 | Asiimov (Factory New),AK-47 | 二西莫夫 (崭新出厂),AK-47,Factory New,2
-http://example.org/yyyp/resource/item/2674,AK-47 | Case Hardened (Factory New),AK-47 | 表面淬火 (崭新出厂),AK-47,Factory New,2
-http://example.org/yyyp/resource/item/2159,AK-47 | Fire Serpent (Field-Tested),AK-47 | 火蛇 (久经沙场),AK-47,Field-Tested,2
-http://example.org/yyyp/resource/item/2221,AK-47 | Fire Serpent (Well-Worn),AK-47 | 火蛇 (破损不堪),AK-47,Well-Worn,2
-http://example.org/yyyp/resource/item/4811,AK-47 | Fuel Injector (Factory New),AK-47 | 燃料喷射器 (崭新出厂),AK-47,Factory New,2
-http://example.org/yyyp/resource/item/19596,AK-47 | Leet Museo (Factory New),AK-47 | 抽象派 1337 (崭新出厂),AK-47,Factory New,2
-http://example.org/yyyp/resource/item/18054,AK-47 | Panthera onca (Factory New),AK-47 | 美洲豹 (崭新出厂),AK-47,Factory New,2
-http://example.org/yyyp/resource/item/1959,AK-47 | Vulcan (Factory New),AK-47 | 火神 (崭新出厂),AK-47,Factory New,2
-http://example.org/yyyp/resource/item/18112,AK-47 | X-Ray (Field-Tested),AK-47 | X 射线 (久经沙场),AK-47,Field-Tested,2
-http://example.org/yyyp/resource/item/2372,AWP | BOOM (Factory New),AWP | *嘣* (崭新出厂),AWP,Factory New,2
-http://example.org/yyyp/resource/item/14570,AWP | Containment Breach (Factory New),AWP | 冲出重围 (崭新出厂),AWP,Factory New,2
-http://example.org/yyyp/resource/item/17798,AWP | Fade (Factory New),AWP | 渐变之色 (崭新出厂),AWP,Factory New,2
-http://example.org/yyyp/resource/item/2902,AWP | Lightning Strike (Minimal Wear),AWP | 雷击 (略有磨损),AWP,Minimal Wear,2
-http://example.org/yyyp/resource/item/8968,AWP | Oni Taiji (Factory New),AWP | 鬼退治 (崭新出厂),AWP,Factory New,2
-http://example.org/yyyp/resource/item/17765,AWP | Silk Tiger (Factory New),AWP | 锦虎 (崭新出厂),AWP,Factory New,2
-http://example.org/yyyp/resource/item/5704,Cologne 2016 Cobblestone Souvenir Package,2016年科隆锦标赛古堡激战纪念包,Cologne 2016 Cobblestone  Package,,2
-http://example.org/yyyp/resource/item/475,Desert Eagle | Blaze (Factory New),沙漠之鹰 | 炽烈之炎 (崭新出厂),Desert Eagle,Factory New,2
-http://example.org/yyyp/resource/item/5306,Desert Eagle | Blaze (Minimal Wear),沙漠之鹰 | 炽烈之炎 (略有磨损),Desert Eagle,Minimal Wear,2
-http://example.org/yyyp/resource/item/15012,Desert Eagle | Emerald Jörmungandr (Factory New),沙漠之鹰 | 翡翠巨蟒 (崭新出厂),Desert Eagle,Factory New,2
-http://example.org/yyyp/resource/item/14787,Desert Eagle | Emerald Jörmungandr (Minimal Wear),沙漠之鹰 | 翡翠巨蟒 (略有磨损),Desert Eagle,Minimal Wear,2
-http://example.org/yyyp/resource/item/19704,Desert Eagle | Fennec Fox (Factory New),沙漠之鹰 | 沙漠之狐 (崭新出厂),Desert Eagle,Factory New,2
-http://example.org/yyyp/resource/item/3353,Desert Eagle | Hand Cannon (Factory New),沙漠之鹰 | 手上加农炮 (崭新出厂),Desert Eagle,Factory New,2
-http://example.org/yyyp/resource/item/1792,Desert Eagle | Sunset Storm 壱 (Factory New),沙漠之鹰 | 日落风暴 壱 (崭新出厂),Desert Eagle,Factory New,2
-http://example.org/yyyp/resource/item/2550,Desert Eagle | Sunset Storm 壱 (Minimal Wear),沙漠之鹰 | 日落风暴 壱 (略有磨损),Desert Eagle,Minimal Wear,2
-http://example.org/yyyp/resource/item/1791,Desert Eagle | Sunset Storm 弐 (Factory New),沙漠之鹰 | 日落风暴 弐 (崭新出厂),Desert Eagle,Factory New,2
-http://example.org/yyyp/resource/item/5314,Desert Eagle | Sunset Storm 弐 (Minimal Wear),沙漠之鹰 | 日落风暴 弐 (略有磨损),Desert Eagle,Minimal Wear,2
-http://example.org/yyyp/resource/item/2298,ESL One Cologne 2015 Cobblestone Souvenir Package,2015年 ESL One 科隆锦标赛古堡激战纪念包,ESL One Cologne 2015 Cobblestone  Package,,2
-http://example.org/yyyp/resource/item/4560,Five-SeveN | Neon Kimono (Factory New),FN57 | 日式荧光涂装 (崭新出厂),Five-SeveN,Factory New,2
-http://example.org/yyyp/resource/item/2729,Glock-18 | Twilight Galaxy (Factory New),格洛克18型 | 暮光星系 (崭新出厂),Glock-18,Factory New,2
-http://example.org/yyyp/resource/item/9291,Krakow 2017 Cobblestone Souvenir Package,2017年克拉科夫锦标赛古堡激战纪念包,Krakow 2017 Cobblestone  Package,,2
+http://example.org/yyyp/resource/item/12025,AK-47 | Asiimov (Minimal Wear),AK-47 | 二西莫夫 (略有磨损),AK-47,Minimal Wear,2
+http://example.org/yyyp/resource/item/12142,AK-47 | Asiimov (Well-Worn),AK-47 | 二西莫夫 (破损不堪),AK-47,Well-Worn,2
+http://example.org/yyyp/resource/item/14841,AK-47 | Baroque Purple (Battle-Scarred),AK-47 | 巴洛克之紫 (战痕累累),AK-47,Battle-Scarred,2
+http://example.org/yyyp/resource/item/14582,AK-47 | Baroque Purple (Field-Tested),AK-47 | 巴洛克之紫 (久经沙场),AK-47,Field-Tested,2
+http://example.org/yyyp/resource/item/14534,AK-47 | Baroque Purple (Minimal Wear),AK-47 | 巴洛克之紫 (略有磨损),AK-47,Minimal Wear,2
+http://example.org/yyyp/resource/item/14293,AK-47 | Baroque Purple (Well-Worn),AK-47 | 巴洛克之紫 (破损不堪),AK-47,Well-Worn,2
+http://example.org/yyyp/resource/item/191,AK-47 | Black Laminate (Battle-Scarred),AK-47 | 黑色层压板 (战痕累累),AK-47,Battle-Scarred,2
+http://example.org/yyyp/resource/item/184,AK-47 | Black Laminate (Field-Tested),AK-47 | 黑色层压板 (久经沙场),AK-47,Field-Tested,2
+http://example.org/yyyp/resource/item/267,AK-47 | Black Laminate (Minimal Wear),AK-47 | 黑色层压板 (略有磨损),AK-47,Minimal Wear,2
+http://example.org/yyyp/resource/item/3101,AK-47 | Black Laminate (Well-Worn),AK-47 | 黑色层压板 (破损不堪),AK-47,Well-Worn,2
+http://example.org/yyyp/resource/item/8605,AK-47 | Bloodsport (Factory New),AK-47 | 血腥运动 (崭新出厂),AK-47,Factory New,2
+http://example.org/yyyp/resource/item/8601,AK-47 | Bloodsport (Field-Tested),AK-47 | 血腥运动 (久经沙场),AK-47,Field-Tested,2
+http://example.org/yyyp/resource/item/8806,AK-47 | Bloodsport (Well-Worn),AK-47 | 血腥运动 (破损不堪),AK-47,Well-Worn,2
+http://example.org/yyyp/resource/item/1460,AK-47 | Blue Laminate (Factory New),AK-47 | 蓝色层压板 (崭新出厂),AK-47,Factory New,2
+http://example.org/yyyp/resource/item/287,AK-47 | Blue Laminate (Field-Tested),AK-47 | 蓝色层压板 (久经沙场),AK-47,Field-Tested,2
+http://example.org/yyyp/resource/item/46,AK-47 | Blue Laminate (Minimal Wear),AK-47 | 蓝色层压板 (略有磨损),AK-47,Minimal Wear,2
+http://example.org/yyyp/resource/item/2935,AK-47 | Blue Laminate (Well-Worn),AK-47 | 蓝色层压板 (破损不堪),AK-47,Well-Worn,2
+http://example.org/yyyp/resource/item/2854,AK-47 | Cartel (Battle-Scarred),AK-47 | 卡特尔 (战痕累累),AK-47,Battle-Scarred,2
+http://example.org/yyyp/resource/item/2026,AK-47 | Cartel (Factory New),AK-47 | 卡特尔 (崭新出厂),AK-47,Factory New,2
+http://example.org/yyyp/resource/item/933,AK-47 | Cartel (Field-Tested),AK-47 | 卡特尔 (久经沙场),AK-47,Field-Tested,2
+http://example.org/yyyp/resource/item/649,AK-47 | Cartel (Minimal Wear),AK-47 | 卡特尔 (略有磨损),AK-47,Minimal Wear,2
+http://example.org/yyyp/resource/item/2831,AK-47 | Cartel (Well-Worn),AK-47 | 卡特尔 (破损不堪),AK-47,Well-Worn,2
+http://example.org/yyyp/resource/item/661,AK-47 | Case Hardened (Battle-Scarred),AK-47 | 表面淬火 (战痕累累),AK-47,Battle-Scarred,2

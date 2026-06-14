@@ -1,10 +1,6 @@
 platformCode,platformName,observations
-BUFF,NetEase BUFF,180
-C5,C5Game,180
-CSMONEY,CS.MONEY,180
-DMARKET,DMarket,180
-HALOSKINS,HaloSkins,180
-SKINPORT,Skinport,180
-STEAM,Steam Community Market,180
-WAXPEER,Waxpeer,180
-YOUPIN,YouPin,180
+BUFF,NetEase BUFF,10000
+C5,C5Game,10000
+HALOSKINS,HaloSkins,10000
+STEAM,Steam Community Market,10000
+YOUPIN,YouPin,10000

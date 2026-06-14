@@ -6,24 +6,20 @@ The domain of this prototype is CS2 item market monitoring. The goal is to integ
 
 ## Datasets
 
-The sample datasets were exported from the local YYYP SQLite database. The original market observations were collected from the SteamDT CS2 market API. The prototype uses the nine platforms that are present in the local collected data:
+The sample datasets were exported from the local YYYP SQLite database. The original market observations were collected from the SteamDT CS2 market API. The prototype uses 10,000 CS2 items and the five platforms that have valid positive sell-price observations in the local collected data:
 
 - YOUPIN
 - C5
 - BUFF
 - HALOSKINS
 - STEAM
-- SKINPORT
-- WAXPEER
-- DMARKET
-- CSMONEY
 
 The submitted CSV datasets are:
 
 - `datasets/items.csv`: local item catalog with item id, Steam market hash name, Chinese display name, tier, and enabled flag.
 - `datasets/platforms.csv`: platform code and display name.
 - `datasets/platform_mappings.csv`: available platform-specific item identifiers.
-- `datasets/prices/*.csv`: one file per platform, containing the latest observed sell price, sell count, bid price, bid count, and timestamp.
+- `datasets/prices/*.csv`: one file per platform, containing the latest valid observed sell price, sell count, bid price, bid count, and timestamp.
 
 ## Integration Problems
 
@@ -31,7 +27,7 @@ The data contains several realistic integration issues:
 
 - The same CS2 item can have a local YYYP id, a Steam `market_hash_name`, and different platform-specific item ids.
 - Some platforms have known platform item ids, while others must be matched through the Steam market hash name.
-- Different platforms do not provide equally complete market data. In this sample, SKINPORT, WAXPEER, DMARKET, and CSMONEY have zero sell prices in the latest snapshot, so the Java program keeps the observations but marks them as invalid prices for analytical queries.
+- The SteamDT documentation mentions more supported platforms than this prototype uses. Platforms whose latest local observations were zero or unavailable were excluded from the submitted dataset, because they would not add meaningful market evidence to the integration graph.
 - Item names contain embedded semantics such as weapon type and wear condition, for example `AK-47 | Asiimov (Factory New)`.
 - Bid price and bid count are missing or zero for some platform observations.
 
@@ -84,4 +80,4 @@ Aggregation queries:
 
 ## Normalization Decisions
 
-The Java program resolves items first by platform-specific item id when available, then falls back to the Steam market hash name. Prices are stored in CNY as decimal literals. Zero sell prices are preserved as observations but marked with `yyyp:hasValidSellPrice false`, so queries can distinguish missing or unavailable market prices from valid market prices. Timestamps from the local database are normalized to `xsd:dateTime`.
+The Java program resolves items first by platform-specific item id when available, then falls back to the Steam market hash name. Prices are stored in CNY as decimal literals. The exported price datasets contain only positive sell prices, and the Java program still records `yyyp:hasValidSellPrice` for each observation so analytical queries can filter valid market prices explicitly. Timestamps from the local database are normalized to `xsd:dateTime`.

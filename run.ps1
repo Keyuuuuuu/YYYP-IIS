@@ -19,4 +19,4 @@ if ($mvn) {
     & (Join-Path $mavenDir "bin\mvn.cmd") clean package
 }
 
-java -jar target\YYYP-IIS-1.0.0.jar
+java -Xmx2g -jar target\YYYP-IIS-1.0.0.jar

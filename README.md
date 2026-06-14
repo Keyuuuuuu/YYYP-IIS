@@ -6,7 +6,7 @@ Java-based RDF integration prototype for CS2 item market data collected by the Y
 
 ```powershell
 mvn clean package
-java -jar target/YYYP-IIS-1.0.0.jar
+java -Xmx2g -jar target/YYYP-IIS-1.0.0.jar
 ```
 
 On Windows without Maven in `PATH`, run:
@@ -16,6 +16,13 @@ On Windows without Maven in `PATH`, run:
 ```
 
 The application reads `datasets/`, builds an Apache Jena RDF model, writes `output/yyyp-market.ttl`, and executes all SPARQL queries from `queries/` into `output/query-results/`.
+
+Current dataset size:
+
+- 10,000 CS2 items
+- 5 market platforms with valid prices: YOUPIN, C5, BUFF, HALOSKINS, STEAM
+- 50,000 price observations
+- 870,495 generated RDF triples
 
 ## Project Structure
 
