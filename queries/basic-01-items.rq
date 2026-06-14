@@ -1,0 +1,14 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?marketHashName ?chineseName ?weapon ?wear ?tier
+WHERE {
+  ?item a yyyp:Item ;
+        yyyp:marketHashName ?marketHashName ;
+        yyyp:tier ?tier .
+  OPTIONAL { ?item yyyp:chineseName ?chineseName . }
+  OPTIONAL { ?item yyyp:weaponType/rdfs:label ?weapon . }
+  OPTIONAL { ?item yyyp:wearCondition/rdfs:label ?wear . }
+}
+ORDER BY ?marketHashName
+LIMIT 30

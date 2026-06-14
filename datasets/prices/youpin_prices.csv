@@ -1,0 +1,181 @@
+platform_item_id,market_hash_name,observed_at,sell_price_cny,sell_count,bid_price_cny,bid_count
+43398,AK-47 | Asiimov (Factory New),2026-04-06 17:39:42.080123,4294.5,229,6600.0,34
+798,AK-47 | Case Hardened (Factory New),2026-04-06 23:01:47.928840,6480.0,412,19200.0,34
+31232,AK-47 | Fire Serpent (Field-Tested),2026-04-06 20:57:22.648193,5585.0,323,6570.0,31
+52256,AK-47 | Fire Serpent (Well-Worn),2026-04-06 20:58:27.612407,5936.0,7,5340.0,2
+44953,AK-47 | Fuel Injector (Factory New),2026-04-06 23:24:34.181982,4469.99,494,4800.0,48
+61402,AK-47 | Leet Museo (Factory New),2026-04-06 18:53:42.645975,4798.5,555,4700.0,68
+46962,AK-47 | Panthera onca (Factory New),2026-04-06 18:38:42.474036,6300.0,111,6260.0,22
+5124,AK-47 | Vulcan (Factory New),2026-04-06 20:55:12.610454,5120.0,933,8550.0,45
+51527,AK-47 | X-Ray (Field-Tested),2026-04-06 18:39:42.497638,6578.97,105,7390.0,20
+48325,AWP | BOOM (Factory New),2026-04-06 20:59:32.605741,3899.0,47,3800.0,6
+48906,AWP | Containment Breach (Factory New),2026-04-06 18:03:42.244553,5629.0,188,5430.0,20
+45724,AWP | Fade (Factory New),2026-04-06 18:35:42.459612,7449.0,505,7340.0,177
+45768,AWP | Lightning Strike (Minimal Wear),2026-04-06 23:03:59.118314,4219.0,12,3600.0,7
+44228,AWP | Oni Taiji (Factory New),2026-04-06 17:07:41.668767,6898.5,326,7370.0,59
+49281,AWP | Silk Tiger (Factory New),2026-04-06 18:35:42.459612,6559.5,313,6460.0,41
+55851,Cologne 2016 Cobblestone Souvenir Package,2026-04-06 16:35:44.219580,8148.49,14,5180.0,2
+43399,Desert Eagle | Blaze (Factory New),2026-04-06 20:38:57.428203,5364.49,612,5300.0,27
+53274,Desert Eagle | Blaze (Minimal Wear),2026-04-06 23:29:59.176690,6665.9,6,5790.0,5
+44457,Desert Eagle | Emerald Jörmungandr (Factory New),2026-04-06 18:08:42.170030,6700.0,286,6600.0,65
+35163,Desert Eagle | Emerald Jörmungandr (Minimal Wear),2026-04-06 18:05:42.097230,4114.0,10,3750.0,5
+61660,Desert Eagle | Fennec Fox (Factory New),2026-04-06 18:55:42.892193,7088.0,289,7150.0,54
+46920,Desert Eagle | Hand Cannon (Factory New),2026-04-06 23:08:19.069511,4146.0,26,3890.0,6
+48574,Desert Eagle | Sunset Storm 壱 (Factory New),2026-04-06 20:53:02.488690,4590.0,71,4600.0,5
+52240,Desert Eagle | Sunset Storm 壱 (Minimal Wear),2026-04-06 21:01:42.717314,4190.0,3,3780.0,5
+43801,Desert Eagle | Sunset Storm 弐 (Factory New),2026-04-06 20:53:02.488690,4629.0,71,4540.0,9
+53759,Desert Eagle | Sunset Storm 弐 (Minimal Wear),2026-04-06 23:29:59.176690,4699.0,1,3760.0,5
+54973,ESL One Cologne 2015 Cobblestone Souvenir Package,2026-04-06 20:58:27.612407,8303.0,12,5250.0,3
+49651,Five-SeveN | Neon Kimono (Factory New),2026-04-06 23:21:19.247592,4258.0,33,4230.0,6
+45603,Glock-18 | Twilight Galaxy (Factory New),2026-04-06 23:01:49.528441,8199.0,252,8030.0,38
+52320,Krakow 2017 Cobblestone Souvenir Package,2026-04-06 17:10:43.161440,9100.0,14,5190.0,2
+45056,M4A1-S | Blue Phosphor (Factory New),2026-04-06 18:35:42.459612,5397.0,743,5340.0,35
+51970,M4A1-S | Blue Phosphor (Minimal Wear),2026-04-06 18:37:42.335062,6882.0,7,5610.0,5
+43950,M4A1-S | Icarus Fell (Factory New),2026-04-06 20:57:22.648193,5398.98,655,5320.0,29
+51893,M4A1-S | Icarus Fell (Minimal Wear),2026-04-06 20:59:32.605741,5440.0,21,5030.0,5
+61764,M4A1-S | Imminent Danger (Minimal Wear),2026-04-06 18:55:42.892193,8487.48,10,7610.0,6
+48334,M4A1-S | Master Piece (Factory New),2026-04-06 23:21:19.247592,6100.0,101,5850.0,12
+49598,M4A1-S | Welcome to the Jungle (Well-Worn),2026-04-06 18:39:42.497638,5176.5,10,4730.0,2
+3320,M4A4 | Buzz Kill (Factory New),2026-04-06 16:56:42.757966,4749.5,1064,4680.0,62
+45678,M4A4 | Daybreak (Factory New),2026-04-06 23:06:09.414411,8122.49,181,7880.0,27
+43649,M4A4 | Hellfire (Factory New),2026-04-06 17:07:41.668767,4549.0,578,4440.0,59
+45919,M4A4 | Poseidon (Minimal Wear),2026-04-06 20:58:27.612407,8395.0,36,8020.0,12
+52065,MAG-7 | Cinquedea (Factory New),2026-04-06 18:10:42.300330,5428.99,20,5130.0,8
+52041,StatTrak™ AK-47 | Case Hardened (Factory New),2026-04-06 16:38:42.813529,6200.0,50,30000.0,12
+53224,StatTrak™ AK-47 | Case Hardened (Minimal Wear),2026-04-06 23:06:09.414411,4697.0,68,17800.0,11
+47840,StatTrak™ AK-47 | Vulcan (Minimal Wear),2026-04-06 23:09:24.152153,5696.0,161,6080.0,14
+53626,StatTrak™ AWP | Containment Breach (Factory New),2026-04-06 18:08:42.170030,5500.0,13,6920.0,7
+47232,StatTrak™ AWP | Lightning Strike (Factory New),2026-04-06 20:57:22.648193,6215.5,76,6120.0,4
+49890,StatTrak™ AWP | Oni Taiji (Factory New),2026-04-06 17:08:42.045924,6987.5,27,8140.0,10
+47417,StatTrak™ AWP | Oni Taiji (Minimal Wear),2026-04-06 17:08:42.045924,4790.5,13,4490.0,9
+52640,StatTrak™ M4A1-S | Printstream (Factory New),2026-04-06 18:38:42.474036,7620.0,109,12600.0,18
+50324,StatTrak™ M4A1-S | Printstream (Minimal Wear),2026-04-06 18:38:42.474036,4131.99,158,4580.0,13
+52262,StatTrak™ Sawed-Off | Orange DDPAT (Minimal Wear),2026-04-06 23:10:29.160742,6888.0,2,151.0,4
+52591,StatTrak™ USP-S | Kill Confirmed (Factory New),2026-04-06 23:19:09.225198,4659.5,40,5800.0,12
+56615,Sticker | HellRaisers | Katowice 2014,2026-04-06 23:16:59.160652,3800.0,3,3400.0,5
+48299,Sticker | Team Dignitas (Holo) | Cologne 2014,2026-04-06 23:01:47.928840,6769.0,58,6440.0,6
+55477,Sticker | Titan (Holo) | Katowice 2015,2026-04-06 23:09:24.152153,4385.0,18,4100.0,5
+1108,Sticker | Vega Squadron (Holo) | Boston 2018,2026-04-06 17:20:41.832475,140.0,29,109.0,3
+1162,Sticker | ropz (Foil) | London 2018,2026-04-06 17:29:41.995543,299.0,31,252.0,5
+50468,USP-S | Target Acquired (Factory New),2026-04-06 18:37:42.335062,4850.0,132,4730.0,41
+62036,★ Butterfly Knife | Autotronic (Battle-Scarred),2026-04-06 18:55:42.892193,5199.5,60,5160.0,14
+62035,★ Butterfly Knife | Autotronic (Field-Tested),2026-04-06 18:55:42.892193,6760.0,734,7100.0,54
+100372,★ Butterfly Knife | Black Laminate (Battle-Scarred),2026-04-06 18:56:42.646547,4520.0,128,4480.0,12
+62043,★ Butterfly Knife | Black Laminate (Field-Tested),2026-04-06 18:56:42.646547,5076.5,404,5090.0,29
+62044,★ Butterfly Knife | Black Laminate (Minimal Wear),2026-04-06 18:55:42.892193,5329.5,217,5260.0,24
+62045,★ Butterfly Knife | Black Laminate (Well-Worn),2026-04-06 18:55:42.892193,4748.5,194,4750.0,12
+44500,★ Butterfly Knife | Blue Steel (Battle-Scarred),2026-04-06 23:12:39.131020,5545.0,72,5380.0,6
+43591,★ Butterfly Knife | Blue Steel (Field-Tested),2026-04-06 20:57:22.648193,6075.0,249,5990.0,19
+45202,★ Butterfly Knife | Blue Steel (Minimal Wear),2026-04-06 23:21:19.247592,6523.0,118,6420.0,18
+12936,★ Butterfly Knife | Blue Steel (Well-Worn),2026-04-06 23:25:39.157097,5624.5,135,5560.0,9
+100349,★ Butterfly Knife | Bright Water (Battle-Scarred),2026-04-06 18:55:42.892193,3808.0,20,3730.0,7
+62032,★ Butterfly Knife | Bright Water (Factory New),2026-04-06 18:56:42.646547,4808.5,150,4870.0,23
+62033,★ Butterfly Knife | Bright Water (Minimal Wear),2026-04-06 18:55:42.892193,4343.0,216,4310.0,23
+44082,★ Butterfly Knife | Case Hardened (Battle-Scarred),2026-04-06 23:26:44.368006,4644.0,46,5500.0,9
+48059,★ Butterfly Knife | Case Hardened (Field-Tested),2026-04-06 20:49:47.578142,5188.0,244,10000.0,19
+43535,★ Butterfly Knife | Case Hardened (Minimal Wear),2026-04-06 23:09:24.152153,6249.5,178,13050.0,13
+46966,★ Butterfly Knife | Case Hardened (Well-Worn),2026-04-06 23:26:44.368006,4846.71,89,8000.0,8
+47620,★ Butterfly Knife | Crimson Web (Battle-Scarred),2026-04-06 23:19:09.225198,4132.5,57,4060.0,9
+35222,★ Butterfly Knife | Crimson Web (Field-Tested),2026-04-06 20:51:57.523508,5117.49,260,6180.0,42
+43811,★ Butterfly Knife | Crimson Web (Well-Worn),2026-04-06 23:19:09.225198,4848.0,22,4630.0,9
+62040,★ Butterfly Knife | Freehand (Battle-Scarred),2026-04-06 18:57:42.744089,4058.0,12,3860.0,6
+62039,★ Butterfly Knife | Freehand (Factory New),2026-04-06 18:55:42.892193,5330.0,213,5380.0,21
+62038,★ Butterfly Knife | Freehand (Field-Tested),2026-04-06 18:55:42.892193,4450.0,320,4410.0,30
+62042,★ Butterfly Knife | Freehand (Well-Worn),2026-04-06 18:57:42.744089,4220.5,26,3990.0,7
+62030,★ Butterfly Knife | Lore (Well-Worn),2026-04-06 18:55:42.892193,4275.0,120,4200.0,14
+5882,★ Butterfly Knife | Night (Minimal Wear),2026-04-06 23:03:59.118314,4999.0,62,5820.0,24
+48764,★ Butterfly Knife | Slaughter (Field-Tested),2026-04-06 23:19:09.225198,8690.0,35,8380.0,8
+44763,★ Butterfly Knife | Stained (Field-Tested),2026-04-06 21:00:37.712848,4427.86,156,4410.0,11
+36720,★ Butterfly Knife | Stained (Minimal Wear),2026-04-06 23:15:54.144812,4799.48,129,4810.0,15
+43713,★ Butterfly Knife | Stained (Well-Worn),2026-04-06 23:22:24.277255,4115.0,66,4040.0,9
+44262,★ Butterfly Knife | Ultraviolet (Field-Tested),2026-04-06 17:04:42.865716,4448.5,280,4770.0,37
+3007,★ Butterfly Knife | Ultraviolet (Minimal Wear),2026-04-06 17:04:42.865716,5957.46,70,7020.0,26
+2787,★ Butterfly Knife | Urban Masked (Minimal Wear),2026-04-06 23:14:49.035998,3858.5,55,4000.0,16
+44080,★ Driver Gloves | Diamondback (Field-Tested),2026-04-06 16:58:41.612927,4943.0,284,4860.0,47
+3108,★ Driver Gloves | Lunar Weave (Field-Tested),2026-04-06 16:58:41.612927,6835.0,219,6800.0,48
+60131,★ Gut Knife | Lore (Well-Worn),2026-04-06 17:04:42.865716,1000000.0,1,674.0,8
+50528,★ Hand Wraps | Badlands (Minimal Wear),2026-04-06 16:59:41.971476,8245.0,127,8000.0,38
+57053,★ Hand Wraps | Desert Shamagh (Factory New),2026-04-06 18:41:42.565888,4725.98,5,2980.0,5
+3274,★ Hand Wraps | Slaughter (Field-Tested),2026-04-06 16:56:42.757966,5500.0,236,5200.0,36
+51456,★ Hand Wraps | Spruce DDPAT (Minimal Wear),2026-04-06 16:59:41.971476,7088.0,150,6610.0,48
+44829,★ Karambit,2026-04-06 23:19:09.225198,8040.0,153,7880.0,21
+7483,★ Karambit | Autotronic (Field-Tested),2026-04-06 16:50:41.431756,6780.0,360,7190.0,40
+44633,★ Karambit | Black Laminate (Battle-Scarred),2026-04-06 16:38:42.813529,4579.5,62,4420.0,9
+2298,★ Karambit | Black Laminate (Field-Tested),2026-04-06 16:45:41.462792,5249.0,158,5200.0,18
+1809,★ Karambit | Black Laminate (Well-Worn),2026-04-06 16:58:41.612927,4840.0,86,4760.0,11
+51258,★ Karambit | Blue Steel (Battle-Scarred),2026-04-06 23:16:59.160652,5114.5,40,5010.0,10
+10843,★ Karambit | Blue Steel (Field-Tested),2026-04-06 23:22:24.277255,5640.0,60,5510.0,13
+47055,★ Karambit | Blue Steel (Minimal Wear),2026-04-06 21:00:37.712848,6080.0,36,5870.0,16
+44984,★ Karambit | Blue Steel (Well-Worn),2026-04-06 23:18:04.543946,5254.0,41,5090.0,8
+51053,★ Karambit | Bright Water (Factory New),2026-04-06 16:43:43.443982,4074.49,65,4360.0,14
+52362,★ Karambit | Case Hardened (Battle-Scarred),2026-04-06 23:14:49.035998,4580.5,32,4400.0,6
+9512,★ Karambit | Case Hardened (Field-Tested),2026-04-06 23:06:09.414411,5144.5,161,5030.0,8
+46878,★ Karambit | Case Hardened (Minimal Wear),2026-04-06 23:13:44.300211,6288.0,94,5880.0,12
+48492,★ Karambit | Case Hardened (Well-Worn),2026-04-06 23:06:09.414411,4736.0,66,4590.0,6
+52982,★ Karambit | Crimson Web (Battle-Scarred),2026-04-06 23:20:14.105087,3999.5,16,3850.0,7
+45777,★ Karambit | Crimson Web (Field-Tested),2026-04-06 20:59:32.605741,4555.0,103,5150.0,35
+51536,★ Karambit | Crimson Web (Minimal Wear),2026-04-06 23:19:09.225198,7240.0,40,10680.0,17
+50064,★ Karambit | Damascus Steel (Factory New),2026-04-06 20:59:32.605741,5058.0,59,5130.0,18
+43679,★ Karambit | Damascus Steel (Field-Tested),2026-04-06 23:26:44.368006,4429.5,102,4410.0,17
+3574,★ Karambit | Damascus Steel (Minimal Wear),2026-04-06 23:06:09.414411,4620.0,53,4560.0,20
+54948,★ Karambit | Damascus Steel (Well-Worn),2026-04-06 23:24:34.181982,4297.5,11,3500.0,6
+1785,★ Karambit | Doppler (Factory New),2026-04-06 20:37:52.478664,9550.0,2081,59300.0,93
+53050,★ Karambit | Freehand (Factory New),2026-04-06 16:43:43.443982,4373.0,89,4380.0,15
+44076,★ Karambit | Lore (Field-Tested),2026-04-06 16:43:43.443982,4359.5,175,4550.0,22
+6836,★ Karambit | Lore (Minimal Wear),2026-04-06 16:41:42.307518,6158.5,123,6250.0,19
+46429,★ Karambit | Marble Fade (Factory New),2026-04-06 23:14:49.035998,7919.5,476,7800.0,24
+52724,★ Karambit | Night (Minimal Wear),2026-04-06 21:00:37.712848,4460.0,29,4990.0,20
+47818,★ Karambit | Slaughter (Minimal Wear),2026-04-06 20:57:22.648193,6960.0,58,6700.0,12
+52131,★ Karambit | Stained (Minimal Wear),2026-04-06 23:27:49.212140,4299.5,39,4240.0,14
+45178,★ Karambit | Tiger Tooth (Factory New),2026-04-06 20:48:42.679147,6759.0,230,6770.0,19
+487,★ Karambit | Ultraviolet (Minimal Wear),2026-04-06 23:21:19.247592,4740.0,54,5740.0,27
+45197,★ M9 Bayonet,2026-04-06 23:10:29.160742,5880.0,198,5810.0,31
+44678,★ M9 Bayonet | Autotronic (Field-Tested),2026-04-06 16:47:43.218355,5129.5,314,5210.0,40
+52775,★ M9 Bayonet | Blue Steel (Minimal Wear),2026-04-06 23:22:24.277255,3993.0,44,3900.0,10
+48326,★ M9 Bayonet | Case Hardened (Minimal Wear),2026-04-06 23:24:34.181982,4059.0,70,3810.0,11
+49081,★ M9 Bayonet | Crimson Web (Minimal Wear),2026-04-06 23:22:24.277255,6134.5,39,11670.0,24
+754,★ M9 Bayonet | Doppler (Factory New),2026-04-06 20:46:32.420472,7074.5,1417,62500.0,109
+43803,★ M9 Bayonet | Fade (Factory New),2026-04-06 21:00:37.712848,7457.0,340,8850.0,31
+34973,★ M9 Bayonet | Marble Fade (Factory New),2026-04-06 21:01:42.717314,5970.5,399,5920.0,32
+54210,★ M9 Bayonet | Marble Fade (Minimal Wear),2026-04-06 23:27:49.212140,6140.0,12,5390.0,9
+52805,★ M9 Bayonet | Slaughter (Factory New),2026-04-06 23:21:19.247592,6350.0,66,6650.0,16
+43805,★ M9 Bayonet | Slaughter (Field-Tested),2026-04-06 23:24:34.181982,4660.0,22,4480.0,12
+45156,★ M9 Bayonet | Slaughter (Minimal Wear),2026-04-06 23:20:14.105087,5230.0,58,5150.0,20
+49372,★ M9 Bayonet | Tiger Tooth (Factory New),2026-04-06 23:11:34.016984,5082.5,231,5060.0,29
+885,★ Moto Gloves | Boom! (Field-Tested),2026-04-06 16:58:41.612927,4380.0,250,4310.0,31
+49282,★ Moto Gloves | Boom! (Minimal Wear),2026-04-06 17:03:42.832254,6988.0,107,6700.0,30
+2574,★ Moto Gloves | Eclipse (Minimal Wear),2026-04-06 17:03:42.832254,5888.0,133,5600.0,31
+44668,★ Specialist Gloves | Fade (Minimal Wear),2026-04-06 17:24:41.820862,4219.0,641,7480.0,30
+47079,★ Sport Gloves | Amphibious (Minimal Wear),2026-04-06 17:24:41.820862,5839.99,575,10380.0,36
+46154,★ Sport Gloves | Arid (Well-Worn),2026-04-06 17:03:42.832254,4198.5,18,3680.0,6
+51135,★ Sport Gloves | Nocts (Field-Tested),2026-04-06 18:37:42.335062,4600.0,1052,5620.0,67
+53559,★ Sport Gloves | Nocts (Minimal Wear),2026-04-06 18:39:42.497638,7650.0,499,9200.0,33
+43680,★ Sport Gloves | Omega (Minimal Wear),2026-04-06 17:24:41.820862,4080.0,491,6700.0,43
+54427,★ Sport Gloves | Slingshot (Minimal Wear),2026-04-06 18:37:42.335062,7799.0,387,13240.0,46
+100382,★ StatTrak™ Butterfly Knife | Autotronic (Field-Tested),2026-04-06 18:56:42.646547,6570.0,62,6640.0,13
+62024,★ StatTrak™ Butterfly Knife | Autotronic (Minimal Wear),2026-04-06 18:56:42.646547,8190.0,20,7810.0,8
+62025,★ StatTrak™ Butterfly Knife | Black Laminate (Field-Tested),2026-04-06 18:56:42.646547,4880.0,40,4610.0,4
+53556,★ StatTrak™ Butterfly Knife | Crimson Web (Field-Tested),2026-04-06 16:38:42.813529,5200.0,17,5320.0,13
+54739,★ StatTrak™ Butterfly Knife | Damascus Steel (Field-Tested),2026-04-06 17:08:42.045924,5440.0,9,5130.0,8
+100368,★ StatTrak™ Butterfly Knife | Freehand (Field-Tested),2026-04-06 18:57:42.744089,4496.0,34,4370.0,5
+62020,★ StatTrak™ Butterfly Knife | Lore (Battle-Scarred),2026-04-06 18:56:42.646547,4150.0,16,3860.0,5
+100354,★ StatTrak™ Butterfly Knife | Lore (Field-Tested),2026-04-06 18:56:42.646547,5259.99,38,5310.0,6
+56003,★ StatTrak™ Butterfly Knife | Night (Field-Tested),2026-04-06 21:00:37.712848,4100.0,18,3960.0,6
+44601,★ StatTrak™ Butterfly Knife | Rust Coat (Battle-Scarred),2026-04-06 17:08:42.045924,4015.55,48,4180.0,12
+53890,★ StatTrak™ Butterfly Knife | Stained (Field-Tested),2026-04-06 23:29:59.176690,4463.5,16,4300.0,5
+53392,★ StatTrak™ Butterfly Knife | Stained (Well-Worn),2026-04-06 17:03:42.832254,4323.1,9,3040.0,3
+50826,★ StatTrak™ Butterfly Knife | Tiger Tooth (Factory New),2026-04-06 17:08:42.045924,8951.0,21,8490.0,4
+56712,★ StatTrak™ Karambit | Damascus Steel (Field-Tested),2026-04-06 23:27:49.212140,4417.5,6,4270.0,3
+55559,★ StatTrak™ Karambit | Lore (Field-Tested),2026-04-06 16:37:41.571974,4448.0,17,4300.0,6
+52321,★ StatTrak™ Karambit | Tiger Tooth (Factory New),2026-04-06 23:14:49.035998,7069.0,15,6570.0,4
+51383,★ StatTrak™ M9 Bayonet | Doppler (Factory New),2026-04-06 23:12:39.131020,7169.0,98,54640.0,34
+1086,★ StatTrak™ M9 Bayonet | Fade (Factory New),2026-04-06 23:06:09.414411,7838.88,30,9000.0,126
+52931,★ StatTrak™ M9 Bayonet | Marble Fade (Factory New),2026-04-06 23:14:49.035998,6210.0,20,5670.0,5
+56824,★ StatTrak™ M9 Bayonet | Tiger Tooth (Factory New),2026-04-06 16:34:42.280290,5100.0,24,4740.0,4
+56973,★ StatTrak™ Skeleton Knife | Slaughter (Factory New),2026-04-06 18:17:42.319285,4398.9,11,2990.0,8
+52322,★ StatTrak™ Talon Knife | Doppler (Factory New),2026-04-06 17:47:41.993787,6107.0,32,18200.0,16
+55310,★ StatTrak™ Talon Knife | Marble Fade (Factory New),2026-04-06 17:47:41.993787,4650.0,24,4370.0,3
+58134,★ StatTrak™ Talon Knife | Slaughter (Minimal Wear),2026-04-06 17:39:42.080123,4999.0,2,4080.0,3
+1904,★ Talon Knife | Doppler (Minimal Wear),2026-04-06 17:47:41.993787,6950.0,22,16100.0,18
+53691,★ Talon Knife | Marble Fade (Minimal Wear),2026-04-06 17:47:41.993787,4287.4,12,4030.0,5
+47127,★ Talon Knife | Slaughter (Factory New),2026-04-06 17:36:42.899410,4960.0,36,4850.0,8
