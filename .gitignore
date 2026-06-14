@@ -1,2 +1,3 @@
 target/
 .tools/
+output/full-rdf-graph.gexf
