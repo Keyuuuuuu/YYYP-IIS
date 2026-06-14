@@ -1,0 +1,41 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+
+SELECT ?marketHashName ?buyPlatform ?buyPriceCny ?buyCount ?sellPlatform ?sellPriceCny ?sellCount ?spreadPct
+WHERE {
+  VALUES (?buyPlatformResource ?sellPlatformResource) {
+    (<http://example.org/yyyp/resource/platform/YOUPIN> <http://example.org/yyyp/resource/platform/BUFF>)
+    (<http://example.org/yyyp/resource/platform/BUFF> <http://example.org/yyyp/resource/platform/YOUPIN>)
+    (<http://example.org/yyyp/resource/platform/YOUPIN> <http://example.org/yyyp/resource/platform/C5>)
+    (<http://example.org/yyyp/resource/platform/C5> <http://example.org/yyyp/resource/platform/YOUPIN>)
+    (<http://example.org/yyyp/resource/platform/BUFF> <http://example.org/yyyp/resource/platform/C5>)
+    (<http://example.org/yyyp/resource/platform/C5> <http://example.org/yyyp/resource/platform/BUFF>)
+    (<http://example.org/yyyp/resource/platform/YOUPIN> <http://example.org/yyyp/resource/platform/HALOSKINS>)
+    (<http://example.org/yyyp/resource/platform/HALOSKINS> <http://example.org/yyyp/resource/platform/YOUPIN>)
+    (<http://example.org/yyyp/resource/platform/BUFF> <http://example.org/yyyp/resource/platform/HALOSKINS>)
+    (<http://example.org/yyyp/resource/platform/HALOSKINS> <http://example.org/yyyp/resource/platform/BUFF>)
+  }
+
+  ?item yyyp:marketHashName ?marketHashName ;
+        yyyp:hasPriceSnapshot ?buySnapshot ;
+        yyyp:hasPriceSnapshot ?sellSnapshot .
+
+  ?buySnapshot yyyp:observedOnPlatform ?buyPlatformResource ;
+               yyyp:sellPriceCny ?buyPriceCny ;
+               yyyp:sellCount ?buyCount ;
+               yyyp:hasValidSellPrice true .
+  ?sellSnapshot yyyp:observedOnPlatform ?sellPlatformResource ;
+                yyyp:sellPriceCny ?sellPriceCny ;
+                yyyp:sellCount ?sellCount ;
+                yyyp:hasValidSellPrice true .
+
+  ?buyPlatformResource yyyp:platformCode ?buyPlatform .
+  ?sellPlatformResource yyyp:platformCode ?sellPlatform .
+
+  FILTER(?buyCount >= 20 && ?sellCount >= 20)
+  FILTER(?buyPriceCny >= 1 && ?sellPriceCny >= 1)
+  FILTER(?sellPriceCny > ?buyPriceCny * 1.15 && ?sellPriceCny < ?buyPriceCny * 2.5)
+
+  BIND(ROUND(((?sellPriceCny - ?buyPriceCny) / ?buyPriceCny) * 10000) / 100 AS ?spreadPct)
+}
+ORDER BY DESC(?spreadPct)
+LIMIT 30

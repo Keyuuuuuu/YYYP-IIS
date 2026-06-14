@@ -1,0 +1,41 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+
+SELECT ?priceBand
+       (COUNT(?item) AS ?itemsCompared)
+       (SUM(IF(?steamRatio >= 3, 1, 0)) AS ?steamThreeTimesOrMore)
+       (ROUND(AVG(?steamRatio) * 100) / 100 AS ?avgSteamVsNonSteamIndex)
+       (ROUND(MAX(?steamRatio) * 100) / 100 AS ?maxSteamVsNonSteamIndex)
+WHERE {
+  {
+    SELECT ?item (AVG(?basePrice) AS ?nonSteamAvg) (COUNT(?baseSnapshot) AS ?basePlatformCount)
+    WHERE {
+      ?item yyyp:hasPriceSnapshot ?baseSnapshot .
+      ?baseSnapshot yyyp:observedOnPlatform ?basePlatform ;
+                    yyyp:sellPriceCny ?basePrice ;
+                    yyyp:sellCount ?baseSellCount ;
+                    yyyp:hasValidSellPrice true .
+      ?basePlatform yyyp:platformCode ?basePlatformCode .
+      FILTER(?basePlatformCode != "STEAM" && ?baseSellCount >= 10 && ?basePrice >= 1)
+    }
+    GROUP BY ?item
+    HAVING(COUNT(?baseSnapshot) >= 2)
+  }
+
+  ?item yyyp:hasPriceSnapshot ?steamSnapshot .
+  ?steamSnapshot yyyp:observedOnPlatform <http://example.org/yyyp/resource/platform/STEAM> ;
+                 yyyp:sellPriceCny ?steamPrice ;
+                 yyyp:sellCount ?steamCount ;
+                 yyyp:hasValidSellPrice true .
+
+  FILTER(?steamCount >= 1 && ?steamPrice >= 1 && ?nonSteamAvg > 0)
+  BIND(?steamPrice / ?nonSteamAvg AS ?steamRatio)
+  BIND(
+    IF(?nonSteamAvg < 10, "under 10 CNY",
+      IF(?nonSteamAvg < 100, "10-100 CNY",
+        IF(?nonSteamAvg < 1000, "100-1000 CNY", "1000+ CNY")
+      )
+    ) AS ?priceBand
+  )
+}
+GROUP BY ?priceBand
+ORDER BY ?priceBand

@@ -1,0 +1,30 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+
+SELECT ?marketHashName ?youpinId ?buffId ?c5Id ?haloskinsId
+WHERE {
+  ?item a yyyp:Item ;
+        yyyp:marketHashName ?marketHashName .
+
+  OPTIONAL {
+    ?item yyyp:hasPlatformIdentifier ?youpinIdentifier .
+    ?youpinIdentifier yyyp:identifierPlatform <http://example.org/yyyp/resource/platform/YOUPIN> ;
+                      yyyp:identifierValue ?youpinId .
+  }
+  OPTIONAL {
+    ?item yyyp:hasPlatformIdentifier ?buffIdentifier .
+    ?buffIdentifier yyyp:identifierPlatform <http://example.org/yyyp/resource/platform/BUFF> ;
+                    yyyp:identifierValue ?buffId .
+  }
+  OPTIONAL {
+    ?item yyyp:hasPlatformIdentifier ?c5Identifier .
+    ?c5Identifier yyyp:identifierPlatform <http://example.org/yyyp/resource/platform/C5> ;
+                  yyyp:identifierValue ?c5Id .
+  }
+  OPTIONAL {
+    ?item yyyp:hasPlatformIdentifier ?haloskinsIdentifier .
+    ?haloskinsIdentifier yyyp:identifierPlatform <http://example.org/yyyp/resource/platform/HALOSKINS> ;
+                         yyyp:identifierValue ?haloskinsId .
+  }
+}
+ORDER BY ?marketHashName
+LIMIT 30

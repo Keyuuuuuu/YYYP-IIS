@@ -17,6 +17,8 @@ On Windows without Maven in `PATH`, run:
 
 The application reads `datasets/`, builds an Apache Jena RDF model, writes `output/yyyp-market.ttl`, and executes all SPARQL queries from `queries/` into `output/query-results/`.
 
+The submitted queries are intentionally analytical rather than only structural. They cover identifier reconciliation, one-item integrated views, non-Steam liquidity-aware price spreads, platform liquidity, cheapest-platform share, platform-pair disagreement, and Steam premium/outlier detection.
+
 Current dataset size:
 
 - 10,000 CS2 items

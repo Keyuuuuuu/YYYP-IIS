@@ -1,0 +1,6 @@
+platformCode,platformName,platformItemId,sellPriceCny,sellCount,bidPriceCny,bidCount,observedAt,sourceFile
+BUFF,NetEase BUFF,763469,4294,72,3860,16,2026-04-06T17:39:42.080123Z,buff_prices.csv
+C5,C5Game,553480796,4268,60,4060,5,2026-04-06T17:39:42.080123Z,c5_prices.csv
+HALOSKINS,HaloSkins,553480796,4396.33,51,,,2026-04-06T17:39:42.080123Z,haloskins_prices.csv
+STEAM,Steam Community Market,,6332.69,8,,,2026-04-06T17:39:42.080123Z,steam_prices.csv
+YOUPIN,YouPin,43398,4294.5,229,6600,34,2026-04-06T17:39:42.080123Z,youpin_prices.csv

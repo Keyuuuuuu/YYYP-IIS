@@ -1,0 +1,37 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?platformCode ?platformName
+       (COUNT(?snapshot) AS ?comparedItems)
+       (ROUND(AVG(?priceIndex) * 100) / 100 AS ?avgIndexVsNonSteam)
+       (ROUND(AVG(?priceDeltaCny) * 100) / 100 AS ?avgDeltaVsNonSteamCny)
+WHERE {
+  {
+    SELECT ?item (AVG(?basePrice) AS ?nonSteamAvg) (COUNT(?baseSnapshot) AS ?basePlatformCount)
+    WHERE {
+      ?item yyyp:hasPriceSnapshot ?baseSnapshot .
+      ?baseSnapshot yyyp:observedOnPlatform ?basePlatform ;
+                    yyyp:sellPriceCny ?basePrice ;
+                    yyyp:sellCount ?baseSellCount ;
+                    yyyp:hasValidSellPrice true .
+      ?basePlatform yyyp:platformCode ?basePlatformCode .
+      FILTER(?basePlatformCode != "STEAM" && ?baseSellCount >= 10 && ?basePrice >= 1)
+    }
+    GROUP BY ?item
+    HAVING(COUNT(?baseSnapshot) >= 2)
+  }
+
+  ?item yyyp:hasPriceSnapshot ?snapshot .
+  ?snapshot yyyp:observedOnPlatform ?platform ;
+            yyyp:sellPriceCny ?price ;
+            yyyp:sellCount ?sellCount ;
+            yyyp:hasValidSellPrice true .
+  ?platform yyyp:platformCode ?platformCode ;
+            rdfs:label ?platformName .
+
+  FILTER(?sellCount >= 1 && ?price >= 1 && ?nonSteamAvg > 0)
+  BIND(?price / ?nonSteamAvg AS ?priceIndex)
+  BIND(?price - ?nonSteamAvg AS ?priceDeltaCny)
+}
+GROUP BY ?platformCode ?platformName
+ORDER BY DESC(?avgIndexVsNonSteam)

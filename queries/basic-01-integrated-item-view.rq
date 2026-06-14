@@ -1,0 +1,27 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?platformCode ?platformName ?platformItemId ?sellPriceCny ?sellCount ?bidPriceCny ?bidCount ?observedAt ?sourceFile
+WHERE {
+  ?item yyyp:marketHashName "AK-47 | Asiimov (Factory New)" ;
+        yyyp:hasPriceSnapshot ?snapshot .
+
+  ?snapshot yyyp:observedOnPlatform ?platform ;
+            yyyp:sellPriceCny ?sellPriceCny ;
+            yyyp:sellCount ?sellCount ;
+            yyyp:observedAt ?observedAt ;
+            yyyp:sourceFile ?sourceFile ;
+            yyyp:hasValidSellPrice true .
+
+  ?platform yyyp:platformCode ?platformCode ;
+            rdfs:label ?platformName .
+
+  OPTIONAL { ?snapshot yyyp:bidPriceCny ?bidPriceCny . }
+  OPTIONAL { ?snapshot yyyp:bidCount ?bidCount . }
+  OPTIONAL {
+    ?item yyyp:hasPlatformIdentifier ?identifier .
+    ?identifier yyyp:identifierPlatform ?platform ;
+                yyyp:identifierValue ?platformItemId .
+  }
+}
+ORDER BY ?platformCode

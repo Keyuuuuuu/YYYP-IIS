@@ -1,0 +1,22 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?platformCode ?platformName
+       (COUNT(?snapshot) AS ?itemsWithPrice)
+       (SUM(?sellCount) AS ?totalSellListings)
+       (ROUND(AVG(?sellCount) * 100) / 100 AS ?avgSellListings)
+       (SUM(IF(BOUND(?bidPriceCny) && ?bidPriceCny > 0, 1, 0)) AS ?itemsWithBidPrice)
+       (SUM(IF(BOUND(?bidCount), ?bidCount, 0)) AS ?totalBidOrders)
+WHERE {
+  ?snapshot a yyyp:PriceSnapshot ;
+            yyyp:observedOnPlatform ?platform ;
+            yyyp:sellPriceCny ?sellPriceCny ;
+            yyyp:sellCount ?sellCount ;
+            yyyp:hasValidSellPrice true .
+  ?platform yyyp:platformCode ?platformCode ;
+            rdfs:label ?platformName .
+  OPTIONAL { ?snapshot yyyp:bidPriceCny ?bidPriceCny . }
+  OPTIONAL { ?snapshot yyyp:bidCount ?bidCount . }
+}
+GROUP BY ?platformCode ?platformName
+ORDER BY DESC(?totalSellListings)

@@ -1,0 +1,30 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?platformCode ?platformName
+       (COUNT(?snapshot) AS ?cheapestLiquidItems)
+       (ROUND(AVG(?price) * 100) / 100 AS ?avgCheapestPriceCny)
+       (ROUND(AVG(?sellCount) * 100) / 100 AS ?avgCheapestSellCount)
+WHERE {
+  ?item yyyp:hasPriceSnapshot ?snapshot .
+  ?snapshot yyyp:observedOnPlatform ?platform ;
+            yyyp:sellPriceCny ?price ;
+            yyyp:sellCount ?sellCount ;
+            yyyp:hasValidSellPrice true .
+  ?platform yyyp:platformCode ?platformCode ;
+            rdfs:label ?platformName .
+
+  FILTER(?platformCode != "STEAM" && ?sellCount >= 10)
+
+  FILTER NOT EXISTS {
+    ?item yyyp:hasPriceSnapshot ?otherSnapshot .
+    ?otherSnapshot yyyp:observedOnPlatform ?otherPlatform ;
+                   yyyp:sellPriceCny ?otherPrice ;
+                   yyyp:sellCount ?otherSellCount ;
+                   yyyp:hasValidSellPrice true .
+    ?otherPlatform yyyp:platformCode ?otherPlatformCode .
+    FILTER(?otherPlatformCode != "STEAM" && ?otherSellCount >= 10 && ?otherPrice < ?price)
+  }
+}
+GROUP BY ?platformCode ?platformName
+ORDER BY DESC(?cheapestLiquidItems)

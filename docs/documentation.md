@@ -30,6 +30,7 @@ The data contains several realistic integration issues:
 - The SteamDT documentation mentions more supported platforms than this prototype uses. Platforms whose latest local observations were zero or unavailable were excluded from the submitted dataset, because they would not add meaningful market evidence to the integration graph.
 - Item names contain embedded semantics such as weapon type and wear condition, for example `AK-47 | Asiimov (Factory New)`.
 - Bid price and bid count are missing or zero for some platform observations.
+- Steam observations behave differently from the direct trading platforms: they have no platform-specific item id in the local snapshot, no bid side in this dataset, and some Steam sell prices are large outliers compared with BUFF/YOUPIN/C5/HALOSKINS. The RDF graph keeps the reported SteamDT values, while the analytical queries separate Steam premium/outlier detection from non-Steam trading-platform comparisons.
 
 ## RDF Model
 
@@ -64,20 +65,22 @@ The project contains 10 SPARQL queries.
 
 Basic queries:
 
-- `basic-01-items.rq`: lists items with names, weapon type, wear condition, and tier.
-- `basic-02-youpin-valid-prices.rq`: lists valid YOUPIN prices.
-- `basic-03-one-item-all-platforms.rq`: shows one item across all platforms.
-- `basic-04-items-on-buff-youpin-steam.rq`: retrieves items that have valid prices on BUFF, YOUPIN, and STEAM.
-- `basic-05-cross-platform-price-gap.rq`: demonstrates integration value by comparing BUFF, YOUPIN, and STEAM prices for the same item and finding large differences.
+- `basic-01-integrated-item-view.rq`: shows one item across all platforms, including platform ids, prices, sell depth, bid information, timestamp, and source file.
+- `basic-02-platform-identifier-map.rq`: demonstrates identifier reconciliation by listing the different platform ids for the same integrated item.
+- `basic-03-liquid-nonsteam-price-spread.rq`: compares YOUPIN, BUFF, C5, and HALOSKINS for liquid items and reports large non-Steam price spreads.
+- `basic-04-steam-premium-red-flags.rq`: lists cases where the Steam value is at least three times both YOUPIN and BUFF, making Steam a data-quality or market-semantics red flag rather than an arbitrage source.
+- `basic-05-nonsteam-price-opportunities.rq`: finds potential non-Steam buy/sell price differences with minimum liquidity and a minimum price threshold.
 
 Aggregation queries:
 
-- `aggregation-01-observations-by-platform.rq`: counts observations per platform.
-- `aggregation-02-valid-price-coverage.rq`: calculates valid price coverage per platform.
-- `aggregation-03-average-valid-price-by-platform.rq`: calculates average valid sell price by platform.
-- `aggregation-04-average-price-by-wear.rq`: calculates average valid sell price by wear condition.
-- `aggregation-05-price-spread-by-item.rq`: calculates min price, max price, and spread percentage for each item across platforms.
+- `aggregation-01-platform-liquidity-and-bids.rq`: compares market depth by platform using total sell listings, average sell listings, bid coverage, and total bid orders.
+- `aggregation-02-cheapest-platform-share.rq`: counts how often each non-Steam platform is the cheapest liquid source.
+- `aggregation-03-platform-price-index.rq`: compares each platform against the item's non-Steam average price index.
+- `aggregation-04-platform-pair-disagreement.rq`: measures average absolute price disagreement for each pair of platforms.
+- `aggregation-05-steam-premium-by-price-band.rq`: summarizes Steam premium/outlier behavior by non-Steam price band.
 
 ## Normalization Decisions
 
-The Java program resolves items first by platform-specific item id when available, then falls back to the Steam market hash name. Prices are stored in CNY as decimal literals. The exported price datasets contain only positive sell prices, and the Java program still records `yyyp:hasValidSellPrice` for each observation so analytical queries can filter valid market prices explicitly. Timestamps from the local database are normalized to `xsd:dateTime`.
+The Java program resolves items first by platform-specific item id when available, then falls back to the Steam market hash name. Prices are stored in CNY as decimal literals exactly as reported in the local YYYP snapshot. The exported price datasets contain only positive sell prices, and the Java program still records `yyyp:hasValidSellPrice` for each observation so analytical queries can filter valid market prices explicitly. Timestamps from the local database are normalized to `xsd:dateTime`.
+
+For analytical outputs, non-Steam trading opportunity queries use only YOUPIN, BUFF, C5, and HALOSKINS, require minimum sell counts, and ignore prices below 1 CNY to reduce noise from very small minimum-price increments. Steam is still integrated in the RDF graph, but it is mainly used in the submitted queries to show cross-source disagreement and potential source-quality issues.

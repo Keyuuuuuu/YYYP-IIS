@@ -1,0 +1,30 @@
+PREFIX yyyp: <http://example.org/yyyp/vocab#>
+
+SELECT ?leftPlatform ?rightPlatform
+       (COUNT(?item) AS ?comparedItems)
+       (ROUND(AVG(?absDiffPct) * 100) / 100 AS ?avgAbsDiffPct)
+       (ROUND(MAX(?absDiffPct) * 100) / 100 AS ?maxAbsDiffPct)
+WHERE {
+  ?item yyyp:hasPriceSnapshot ?leftSnapshot ;
+        yyyp:hasPriceSnapshot ?rightSnapshot .
+
+  ?leftSnapshot yyyp:observedOnPlatform ?leftPlatformResource ;
+                yyyp:sellPriceCny ?leftPrice ;
+                yyyp:sellCount ?leftCount ;
+                yyyp:hasValidSellPrice true .
+  ?rightSnapshot yyyp:observedOnPlatform ?rightPlatformResource ;
+                 yyyp:sellPriceCny ?rightPrice ;
+                 yyyp:sellCount ?rightCount ;
+                 yyyp:hasValidSellPrice true .
+
+  ?leftPlatformResource yyyp:platformCode ?leftPlatform .
+  ?rightPlatformResource yyyp:platformCode ?rightPlatform .
+
+  FILTER(STR(?leftPlatform) < STR(?rightPlatform))
+  FILTER(?leftCount >= 10 && ?rightCount >= 10)
+  FILTER(?leftPrice >= 1 && ?rightPrice >= 1)
+
+  BIND(ABS(?leftPrice - ?rightPrice) / ((?leftPrice + ?rightPrice) / 2) * 100 AS ?absDiffPct)
+}
+GROUP BY ?leftPlatform ?rightPlatform
+ORDER BY DESC(?avgAbsDiffPct)
