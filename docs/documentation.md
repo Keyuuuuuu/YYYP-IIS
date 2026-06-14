@@ -2,11 +2,11 @@
 
 ## Domain
 
-The domain of this prototype is CS2 item market monitoring. The goal is to integrate market observations for the same CS2 items across multiple trading platforms into one RDF graph. The source scenario is based on the YYYP project, which monitors item prices, listing counts, bid prices, and bid counts.
+The domain of this prototype is CS2 item market monitoring. CS2, or Counter-Strike 2, is a game on Steam with a large virtual item market. YYYP is a project I am currently developing to monitor CS2 item prices, listing counts, bid prices, and bid counts. This assignment uses the YYYP project scenario as the basis for building an integrated RDF graph from multiple market data sources.
 
 ## Datasets
 
-The sample datasets were exported from the local YYYP SQLite database. The original market observations were collected from the SteamDT CS2 market API. The prototype uses 10,000 CS2 items and the five platforms that have valid positive sell-price observations in the local collected data:
+The sample datasets were exported from the local YYYP SQLite database. The original market observations were collected from the SteamDT CS2 market API. The local project contains more market data, but this prototype selects 10,000 CS2 items to keep the assignment dataset large enough for meaningful integration while still being convenient to submit, run, and inspect. The prototype uses the five platforms that have valid positive sell-price observations in the selected local data:
 
 - YOUPIN
 - C5

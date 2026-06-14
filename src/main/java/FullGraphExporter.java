@@ -1,5 +1,3 @@
-package hu.eszterhazy.yyyp;
-
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.RDFNode;
